@@ -5,8 +5,10 @@ int gcd(int a, int b) {
         return a;
     return gcd(b, a % b);}
 int main() {
-    int x = 48, y = 18;
-    printf("GCD of %d and %d is %d\n", x, y, gcd(x, y));
+    int a,b;
+    printf("read values of a and b:");
+    scanf("%d%d",&a,&b);
+    printf("GCD of %d and %d is %d\n", a, b, gcd(a,b));
     return 0;}
 
 //tower of hanoi
